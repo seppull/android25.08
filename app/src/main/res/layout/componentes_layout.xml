@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:background="@drawable/hitech"
+        android:background="#fffccc"
         android:orientation="vertical">
 
 
@@ -42,6 +42,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:counterMaxLength="100"
             app:endIconMode="clear_text"
             app:startIconContentDescription="@string/email"
             app:startIconDrawable="@drawable/ic_baseline_alternate_email">
@@ -58,6 +59,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:counterMaxLength="10"
             app:endIconMode="password_toggle"
             app:startIconContentDescription="@string/insira_sua_senha"
             app:startIconDrawable="@drawable/ic_baseline_lock">
@@ -70,5 +72,14 @@
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            app:icon="@drawable/ic_baseline_lock"
+            />
+
+
     </LinearLayout>
 </LinearLayout>
